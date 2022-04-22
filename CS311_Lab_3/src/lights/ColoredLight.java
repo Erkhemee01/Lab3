@@ -9,25 +9,25 @@ public class ColoredLight extends Light{
 	 * @param color - color of this light.
 	 */
 	public ColoredLight(Color color) {
-		// TODO
-		throw new RuntimeException("ColoredLight(Color) not yet implemented!");
+		//Color red
+		Color c = new Color(255, 0, 0);
+		Light light = new ColoredLight(c);
 	}
 	
 	/**
 	 * Returns the color of this light.
 	 * @return color of this light.
 	 */
-	public Color getColor() {
-		// TODO
-		throw new RuntimeException("ColoredLight.getColor() not yet implemented!");
+	public Color getColor(Color c){
+		return c;
 	}
 	
 	/**
 	 * Changes the color of this light to be c.
 	 */
 	public void setColor(Color c) {
-		// TODO
-		throw new RuntimeException("ColoredLight.setColor() not yet implemented!");
+		Color o;
+		o = c;
 	}
 	
 	/**
@@ -35,9 +35,7 @@ public class ColoredLight extends Light{
 	 */
 	@Override
 	public void randomChange() {
-		// TODO. 
-		// Take advantage of Light.randomChange
-		throw new RuntimeException("ColoredLight.randomChange() not yet implemented!");
+		Light.randomChange()
 	}
 	
 }
