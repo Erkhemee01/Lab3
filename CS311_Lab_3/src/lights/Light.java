@@ -8,7 +8,7 @@ package lights;
 public class Light {
 	
 	// Fields
-	private static boolean isOn;
+	public static boolean isOn;
 	
 	// Constructors
 	/**
@@ -24,7 +24,7 @@ public class Light {
 	 * @param isOn - whether this light is on
 	 */
 	public Light(boolean isOn) {
-		this.isOn = isOn;
+		Light.isOn = isOn;
 	}
 	
 	// Methods
@@ -43,7 +43,7 @@ public class Light {
 	 *               the light on. false turns it off
 	 */
 	public void setOn(boolean isOn) {
-		isOn = isOn;
+		Light.isOn = isOn;
 	}
 	
 	/**
